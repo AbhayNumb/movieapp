@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,100 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* Banner styling */
+.banner{
+  /* background-color:red; */
+  position: relative;
+}
+.banner-body{
+  color: white;
+  position: absolute;
+  bottom: 0.1rem;
+  overflow: hidden;
+}
+.banner-img{
+  height: 33rem;
+  width: 100vw;
+}
+
+
+/*  AllList  */
+.allLists{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+}
+.each-movie-img{
+  height: 100%;
+}
+.each-movie{
+  height: 20rem;
+  width: 30rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.each-movie-content{
+  position: absolute;
+  top: 0.5rem;
+  color: white;
+}
+.each-movie-btn{
+  position: absolute;
+  bottom:1rem;
+  left: 8.5rem;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.hoverPointer{
+  cursor: pointer;
+}
+.limitChange{
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+
+
+
+
+@media (min-width:311px) and (max-width:425px) {
+  /* Banner styling */
+  .banner{
+    position: relative;
+  }
+  .banner-img{
+    height: 20rem;
+  }
+  .banner-body{
+    color: white;
+    position: absolute;
+    top: 12rem;
+    overflow: hidden;
+  }
+  /* All List */
+  .allLists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .each-movie-img{
+    height: 100%;
+  }
+  .each-movie-btn{
+    position: absolute;
+    bottom:1rem;
+    left: 2.8rem;
+  }
+  .each-movie{
+    height: 20rem;
+    width: 20rem;
+    padding: 0.5rem;
+    position: relative;
+  }
 }
